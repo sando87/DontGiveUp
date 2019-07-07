@@ -5,8 +5,8 @@ using UnityEngine;
 public class CustomMesh : MonoBehaviour
 {
     static Mesh mMesh = null;
+    static Loader Load = new Loader();
     public string ResourceName = "";
-    Loader Load = new Loader();
     Material Mat = null;
     public int animFactor = 0;
 
