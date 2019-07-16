@@ -1,12 +1,12 @@
 ﻿Shader "Custom/MyTerrain"
 {
 	Properties{
-		_TexBase("Texture", 2D) = "white" { }
+		_Tex0("Texture", 2D) = "white" { }
 		_Tex1("Texture", 2D) = "white" { }
 		_Tex2("Texture", 2D) = "white" { }
 		_Tex3("Texture", 2D) = "white" { }
 		_Tex4("Texture", 2D) = "white" { }
-		_TexMix("Texture", 2D) = "white" { }
+		_Tex5("Texture", 2D) = "white" { }
 	}
 	SubShader{
 		Pass {
@@ -34,12 +34,12 @@
 			};
 
 			float4 texelVector[12];
-			sampler2D _TexBase;
+			sampler2D _Tex0;
 			sampler2D _Tex1;
 			sampler2D _Tex2;
 			sampler2D _Tex3;
 			sampler2D _Tex4;
-			sampler2D _TexMix;
+			sampler2D _Tex5;
 
 			v2f vert(vertinput v)
 			{
@@ -71,8 +71,8 @@
 				fixed4 reg1;
 				fixed4 reg2;
 				
-				reg0 = tex2D(_TexMix, input.tex5);
-				reg1 = tex2D(_TexBase, input.tex0);
+				reg0 = tex2D(_Tex5, input.tex5);
+				reg1 = tex2D(_Tex0, input.tex0);
 				reg2 = tex2D(_Tex1, input.tex1);
 				reg2 = reg2 - reg1;
 				reg1 = (reg2 * reg0.x) + reg1;

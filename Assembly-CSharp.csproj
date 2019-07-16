@@ -78,10 +78,14 @@
     <Compile Include="Assets\Scripts\MyTerrain.cs" />
     <Compile Include="Assets\Scripts\PanelBuildings.cs" />
     <Compile Include="Assets\Scripts\Plane.cs" />
+    <Compile Include="Assets\Scripts\TGALoader.cs" />
     <Compile Include="Assets\Scripts\Unit.cs" />
     <Compile Include="Assets\Scripts\Utils.cs" />
     <None Include="Assets\Shader\MyTerrain.shader" />
+    <None Include="Assets\objects\MyObject_17\MyObject_17.txt" />
     <None Include="Assets\Shader\MyShader.shader" />
+    <None Include="Assets\objects\MyObject_16\MyObject_16.txt" />
+    <None Include="Assets\objects\MyObject_15\MyObject_15.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/sjlee/Downloads/unity/DontGiveUp/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
